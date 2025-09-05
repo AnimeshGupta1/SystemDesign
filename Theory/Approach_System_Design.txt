@@ -1,0 +1,19 @@
+- Break down the problem into mutually exclusive features
+- Understand the features
+- Disect each component
+    - For each component look into
+        - Database and Caching
+        - Scaling and Fault Tolerance
+        - Async Processing
+        - Communication
+- Generator also needs to be broken down
+    - Web Svc, Post Svc, Recommendation
+    - These all go into merger
+
+- How to know you have built a good system?
+    - Broken your system into components
+    - Every component has clear set of responsibilities
+    - Technical Details are figured outand each component is clearly dissected
+    - Each component is independently
+        - Scalable, Fault Tolerant and Available
+

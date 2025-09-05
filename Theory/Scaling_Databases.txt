@@ -1,0 +1,13 @@
+- Sharding
+- Paritioning
+
+- Adding more databases and splitting data amongst them
+    - Each database server is a shard
+    - And the data is partitioned
+    - We partition the data, and decide in which shard which partition will live
+    - We can move the partitions amongst the shards
+
+- Paritioning of data can be
+    - Horizontally, put some rows in DB1, and rest rows in DB2
+    - Vertically, Choosing which tables live in which DB.
+    

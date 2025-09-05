@@ -1,0 +1,12 @@
+- Isolation Levels dictate how much one transaction knows about the other
+- Repeatable Read
+    - If database is changed elsewhere, it remains the same for us until we commit it.
+- Read Commited
+    - Reads become inconsistent, if the database is commited somewhere, the commited value is Read
+- Read Uncommited
+    - Here transaction a reads values changed by transaction b, that are still not commited
+    - This causes dirty read as transaction b may even roll back
+- Serializable
+    - Every read is a locking read
+    - Until one transaction commits or rollsback, second transaction can not read
+    

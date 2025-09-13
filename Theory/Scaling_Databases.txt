@@ -10,4 +10,34 @@
 - Paritioning of data can be
     - Horizontally, put some rows in DB1, and rest rows in DB2
     - Vertically, Choosing which tables live in which DB.
-    
+
+- Why non relational databases scale
+    - There are no relations and constraints
+    - Data is modelled to be sharded / distributed on multiple nodes
+
+    - If we don't use foreign keys in relational dbs we can scale them too
+    - Do not use cross shard transaction
+    - Do manual Sharding
+
+- Database decision
+    - Understand the data that is being stored
+    - Understand how much of the data you will be storing
+    - How will you be accessing the data
+
+- If data can fit in a single node 
+    - Need strong consistency of data
+        - Relational db
+    - Need complex queries and aggregations
+        - Relational db
+    - Need key value based access and it needs to be really fast, advance dsa
+        - Redis
+
+- If data fits on multiple nodes/ huge data
+    - Expertise in SQL and can do manual Sharding
+        - Relational DB
+    - KV based access
+        - MongoDB, DDB
+    - Graph Algorithms
+        - Neo4j
+
+
